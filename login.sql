@@ -16,16 +16,28 @@
 CREATE DATABASE IF NOT EXISTS `login` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `login`;
 
+-- Dumping structure for table login.addproduct
+CREATE TABLE IF NOT EXISTS `addproduct` (
+  `id` int(11) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `product_name` varchar(50) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `price` float NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+-- Data exporting was unselected.
 -- Dumping structure for table login.register
 CREATE TABLE IF NOT EXISTS `register` (
-  `Firstname` varchar(50) NOT NULL,
-  `Lastname` varchar(50) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `pass` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `pass` varchar(50) NOT NULL,
+  `ConfirmPass` varchar(50) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 -- Data exporting was unselected.
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-loginregister

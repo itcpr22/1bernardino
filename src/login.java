@@ -72,6 +72,7 @@ public class login extends javax.swing.JFrame {
         lpwpf = new javax.swing.JPasswordField();
 
         createaccount_frame.setMinimumSize(new java.awt.Dimension(476, 450));
+        createaccount_frame.setResizable(false);
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -276,9 +277,9 @@ public class login extends javax.swing.JFrame {
                     .addComponent(lpwpf, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(27, 27, 27)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
