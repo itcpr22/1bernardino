@@ -637,7 +637,6 @@ public class homepage extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(400, 100));
         setMinimumSize(new java.awt.Dimension(588, 555));
-        setPreferredSize(new java.awt.Dimension(653, 585));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
